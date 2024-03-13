@@ -19,15 +19,15 @@ const Hero = () => {
   return (
     <Herosection className="container">
         <div className="row align-items-center">
-        <div className="col-5 col-s">
+        <div className="col-md-5">
           <h1 className="text-center">Quick, Safe way to send and receive social payments online.</h1>
           <h4 className="text-center">Download the app</h4>
-          <div className="row justify-content-center">
-            <img src={img1} alt="" className="img-fluid col-3" width="50"/>
-            <img src={img2} alt="" className="img-fluid col-3"/>
+          <div className="d-flex justify-content-center">
+            <img src={img1} alt="" className="img-fluid"/>
+            <img src={img2} alt="" className="img-fluid"/>
           </div>
         </div>
-        <div className="col col-sm">
+        <div className="col">
           <img src={img} alt="" className="img-fluid" />
         </div>
         </div>

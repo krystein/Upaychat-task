@@ -8,18 +8,16 @@ import "./navbar.css";
 
 
 const Logo = styled.div`
-  color: #fff;
   display: flex;
   align-items: center;
-  padding: 0 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: inter, sans-serif;
   height: 100%;
   cursor: pointer;
   text-decoration: none;
+  color: #4ee54a;
   h1 {
     &:hover {
-      color: #e53f70;
       transform: scale(1.05);
     }
     font-size: clamp(1rem, 8vw, 1.2rem);
@@ -39,7 +37,7 @@ const MenuBar = styled(FaBars)`
     top: 0;
     right: 0;
     transform: translate(-50%, 25%);
-    color: #fff;
+    color: #4ee54a;
   }
 `;
 const NavMenu = styled.div`
@@ -62,7 +60,7 @@ height: 100%
 cursor: pointer;
 text-decoration: none;
 :hover{
-    color: #e53f70;
+    color: #4ee54a;
 }
 `;
 
@@ -71,11 +69,11 @@ const NavBtn = styled.div`
   align-items: center;
   button {
     background-color: transparent;
-    border: 2px solid #e53f70;
+    border: none;
     border-radius: 20px;
     height: 40px;
     width: 100px;
-    color: #e53f70;
+    color: #777777;
     font-family: Share Tech;
     font-size: 18px;
     font-weight: 400;
@@ -85,12 +83,6 @@ const NavBtn = styled.div`
       box-shadow 0.15s ease-in-out;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
       border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    &:hover {
-      background: #e53f70;
-      transform: scale(1.05);
-      border: #e53f70;
-      color: #fff;
-    }
   }
   div {
     margin-right: 30px;
@@ -117,8 +109,9 @@ const Navbar = ({ toggle, menuData }) => {
   return (
     <>
       <nav className={colorChange ? "Itump active" : "Itump active"}>
-          <Logo className="img-fluid">
-            <img src={Img1} alt="" className="img-fluid"  />
+          <Logo>
+            <img src={Img1} alt="" className="img-fluid" width="50" />
+            <h2 className="m-0">UpayChat</h2>
           </Logo>
         <MenuBar onClick={toggle} />
         <div className="mx-5" style={{ display: "flex", gap: "50px" }}>
@@ -131,13 +124,11 @@ const Navbar = ({ toggle, menuData }) => {
               );
             })}
           </NavMenu>
-          <NavBtn>
-            <button>Sign in</button>
-          </NavBtn>
-          <NavBtn>
-            <button>Login</button>
-          </NavBtn>
         </div>
+        <NavBtn>
+            <button>Log in</button>
+            <button>Register</button>
+          </NavBtn>
       </nav>
 
     </>

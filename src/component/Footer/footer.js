@@ -6,8 +6,8 @@ import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const footer = () => {
   return (
-    <div className="container footer row m-5 p-5">
-      <div className="col">
+    <div className="footer row">
+      <div className="col-md">
         <ul>
           <h4>Company</h4>
           <li>About Us</li>
@@ -15,7 +15,7 @@ const footer = () => {
           <li>Blog</li>
         </ul>
       </div>
-      <div className="col">
+      <div className="col-md">
         <ul>
           <h4>Help</h4>
           <li>FAQs</li>
@@ -23,22 +23,36 @@ const footer = () => {
           <li>Pricing</li>
         </ul>
       </div>
-      <div className="col">
+      <div className="col-md">
         <ul>
           <h4>Legal</h4>
           <li>Terms of Use</li>
           <li>Privacy Policy</li>
         </ul>
       </div>
-      <div className="col">
-        <img src={img1} alt="" className="img-fluid" />
-        <img src={img2} alt="" className="img-fluid" />
+      <div className="col-md">
+        <ul>
+          <li>
+            <img src={img1} alt="" className="img-fluid" width="100" />
+          </li>
+          <li>
+            <img src={img2} alt="" className="img-fluid" width="110" />
+          </li>
+        </ul>
       </div>
-      <div className="col">
-        <div className="d-flex"style={{ fontSize: 50, gap: 20}}>
-          <FaTwitter />
-          <FaInstagram />
-          <FaFacebookF />
+      <div className="col-md">
+        <div className="d-flex" style={{ fontSize: 50, gap: 20 }}>
+          <ul className="d-flex">
+            <li>
+              <FaTwitter />
+            </li>
+            <li>
+              <FaInstagram />
+            </li>
+            <li>
+              <FaFacebookF />
+            </li>
+          </ul>
         </div>
       </div>
     </div>

@@ -7,31 +7,31 @@ const Section = () => {
   return (
     <section className="container">
       <div className=" row align-items-center justify-content-center">
-        <div className="col">
+        <div className="col-md">
           <img src={img} alt="" className="img-fluid" />
         </div>
-        <div className="col">
+        <div className="col-md">
           <h1>Send money instantly</h1>
           <hr />
-          <h4>
+          <h5>
             With UpayChat you can send, request money from friends quickly and
             easily, with just a mobile number ot email address using money in
             your UpayChat account balance for free!
-          </h4>.
+          </h5>.
         </div>
       </div>
       <div className="row align-items-center justify-content-center">
-        <div className="col-5">
+        <div className="col-md-5">
           <h1 >
           Bill payments
           </h1>
           <hr/>
-          <h4>
+          <h5>
             Easiest and quickest way to pay bills Airtime electricity bills,
             data subscription, cable TV and whatever it is.
-          </h4>
+          </h5>
         </div>
-        <div className="col jusify-content-center">
+        <div className="col-md jusify-content-center">
           <img src={img1} alt="" className="img-fluid" />
         </div>
       </div>

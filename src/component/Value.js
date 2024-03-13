@@ -7,7 +7,7 @@ const Value = ({valueData}) =>{
         <div className="row">
         {valueData.map((value, index) => {
               return (
-                <div key={index} className="col-4">
+                <div key={index} className="col-md-4">
                   <div className="d-flex align-items-center" style={{gap:10}}>
                     <img src={value.img} alt="" className="img-fluid" width="50"/>
                     <h5 className="font-weight-bolder">{value.title}</h5>

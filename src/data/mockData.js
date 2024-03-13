@@ -74,7 +74,7 @@ export const menuData = [
     { title: "Send & Recieve", link: "/#Home" },
     { title: "Buy Airtime & data", link: "/#Services" },
     { title: "Pay bills", link: "/#Portfolio" },
-  
+    { title: "Card", link: "/#cards" },  
 ];
 
 export const valueData = [
