@@ -94,32 +94,32 @@ export const valueData = [
     description: "Upaychat has no monthly fee,no maintenance fee and no hidden fees or charges."
   },
   {
-    img:img1,
+    img:img4,
     title: "Free cash transfer",
     description: "It's free to open a UpayChat account, send or request money from anyone using UpayChat account balance."
   },
   {
-    img:img1,
+    img:img5,
     title: "Free cash transfer",
     description: "It's free to open a UpayChat account, send or request money from anyone using UpayChat account balance."
   },
   {
-    img:img1,
+    img:img6,
     title: "Free cash transfer",
     description: "It's free to open a UpayChat account, send or request money from anyone using UpayChat account balance."
   },
   {
-    img:img1,
+    img:img7,
     title: "Free cash transfer",
     description: "It's free to open a UpayChat account, send or request money from anyone using UpayChat account balance."
   },
   {
-    img:img1,
+    img:img8,
     title: "Free cash transfer",
     description: "It's free to open a UpayChat account, send or request money from anyone using UpayChat account balance."
   },
   {
-    img:img1,
+    img:img9,
     title: "Free cash transfer",
     description: "It's free to open a UpayChat account, send or request money from anyone using UpayChat account balance."
   },
