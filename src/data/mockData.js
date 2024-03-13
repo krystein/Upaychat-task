@@ -1,4 +1,15 @@
-const mockData = [
+import img1 from "../component/img/balance.png";
+import img2 from "../component/img/bank.png";
+import img3 from "../component/img/bills.png";
+import img4 from "../component/img/cash.png";
+import img5 from "../component/img/chat.png";
+import img6 from "../component/img/privacy.png";
+import img7 from "../component/img/NGN.png";
+import img8 from "../component/img/security.png";
+import img9 from "../component/img/note.png";
+
+
+export const mockData = [
   {
     type: "Debit Card",
     description:
@@ -57,4 +68,75 @@ const mockData = [
   },
 ];
 
-export default mockData;
+
+export const menuData = [
+  
+    { title: "Send & Recieve", link: "/#Home" },
+    { title: "Buy Airtime & data", link: "/#Services" },
+    { title: "Pay bills", link: "/#Portfolio" },
+  
+];
+
+export const valueData = [
+  {
+    img:img1,
+    title: "Free cash transfer",
+    description: "It's free to open a UpayChat account, send or request money from anyone using UpayChat account balance."
+  },
+  {
+    img:img2,
+    title: "Bill payment",
+    description: "Paying your bills is always fast and easy with Upaychat."
+  },
+  {
+    img:img3,
+    title: "No monthly fee",
+    description: "Upaychat has no monthly fee,no maintenance fee and no hidden fees or charges."
+  },
+  {
+    img:img1,
+    title: "Free cash transfer",
+    description: "It's free to open a UpayChat account, send or request money from anyone using UpayChat account balance."
+  },
+  {
+    img:img1,
+    title: "Free cash transfer",
+    description: "It's free to open a UpayChat account, send or request money from anyone using UpayChat account balance."
+  },
+  {
+    img:img1,
+    title: "Free cash transfer",
+    description: "It's free to open a UpayChat account, send or request money from anyone using UpayChat account balance."
+  },
+  {
+    img:img1,
+    title: "Free cash transfer",
+    description: "It's free to open a UpayChat account, send or request money from anyone using UpayChat account balance."
+  },
+  {
+    img:img1,
+    title: "Free cash transfer",
+    description: "It's free to open a UpayChat account, send or request money from anyone using UpayChat account balance."
+  },
+  {
+    img:img1,
+    title: "Free cash transfer",
+    description: "It's free to open a UpayChat account, send or request money from anyone using UpayChat account balance."
+  },
+  {
+    img:img1,
+    title: "Free cash transfer",
+    description: "It's free to open a UpayChat account, send or request money from anyone using UpayChat account balance."
+  },
+  {
+    img:img1,
+    title: "Free cash transfer",
+    description: "It's free to open a UpayChat account, send or request money from anyone using UpayChat account balance."
+  },
+  {
+    img:img1,
+    title: "Free cash transfer",
+    description: "It's free to open a UpayChat account, send or request money from anyone using UpayChat account balance."
+  },
+  
+]
