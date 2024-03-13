@@ -5,7 +5,7 @@ import img1 from "./img/role.2030a329580945a9bdb8.png";
 
 const Section = () => {
   return (
-    <section>
+    <section className="container">
       <div className=" row align-items-center justify-content-center">
         <div className="col">
           <img src={img} alt="" className="img-fluid" />

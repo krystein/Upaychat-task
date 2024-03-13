@@ -10,12 +10,12 @@ const Cardsection = styled.section`
 const CardSection = ({ cards }) => {
   return (
     <Cardsection>
-      <div className="container mt-5">
+      <div className="container mt-5 mb-5">
         <h1>Card Products</h1>
         <hr />
-        <div className="row">
+        <div className="row" style={{gap:10}}>
           {cards.map((card, index) => (
-            <Card key={index} card={card} />
+            <Card key={index} card={card}/>
           ))}
         </div>
       </div>
