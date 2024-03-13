@@ -4,9 +4,7 @@ import Card from "./card";
 import styled from "styled-components";
 
 const Cardsection = styled.section`
-height: 100vh;
-max-height: 1100px;
-overflow: hidden;
+
 `;
 
 const CardSection = ({ cards }) => {
