@@ -1,17 +1,17 @@
-hr{
+hr {
     color: #4ee54a;
-}
-hr:not([size]) {
+  }
+  
+  hr:not([size]) {
     height: 1.5px;
-}
+  }
   
-  
-.card {
+  .card {
     background-color: #f0f0f0;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease ease-in-out;
+    transition: box-shadow 0.3s ease-in-out;
     border-color: #4ee54a;
     color: #4ee54a;
     cursor: pointer;
@@ -19,6 +19,7 @@ hr:not([size]) {
   
   .card:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
   }
   
   .hidden-info {
