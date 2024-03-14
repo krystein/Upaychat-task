@@ -6,7 +6,6 @@ import { FaBars } from "react-icons/fa";
 import Img1 from "../img/download.png";
 import "./navbar.css";
 
-
 const Logo = styled.div`
   display: flex;
   align-items: center;
@@ -48,7 +47,7 @@ const NavMenu = styled.div`
     display: none;
   }
 `;
-const NavMenuLink = styled.a`
+const NavMenuLink = styled.div`
   cursor: pointer;
   color: #777777;
 display: flex;
@@ -106,31 +105,47 @@ const Navbar = ({ toggle, menuData }) => {
     }
   };
   window.addEventListener("scroll", changeNavbarColor);
+
+  const [openDropdownIndex, setOpenDropdownIndex] = useState(null);
+
+  const toggleDropdown = (index) => {
+    setOpenDropdownIndex(openDropdownIndex === index ? null : index);
+  };
+
   return (
     <>
       <nav className={colorChange ? "Itump active" : "Itump active"}>
-          <Logo>
-            <img src={Img1} alt="" className="img-fluid" width="50" />
-            <h2 className="m-0">UpayChat</h2>
-          </Logo>
+        <Logo>
+          <img src={Img1} alt="" className="img-fluid" width="50" />
+          <h2 className="m-0">UpayChat</h2>
+        </Logo>
         <MenuBar onClick={toggle} />
         <div className="mx-5" style={{ display: "flex", gap: "50px" }}>
           <NavMenu>
             {menuData.map((item, index) => {
               return (
-                <NavMenuLink href={item.link} key={index}>
+                <NavMenuLink
+                  key={index}
+                  onMouseEnter={() => toggleDropdown(index)}
+                  onMouseLeave={() => toggleDropdown(index)}>
                   {item.title}
+                  {openDropdownIndex === index && (
+            <div className="dropdown-content">
+              {item.option.map((option, optionIndex) => (
+                <a key={optionIndex} href="/#">{option}</a>
+              ))}
+              </div>
+                  )}
                 </NavMenuLink>
               );
             })}
           </NavMenu>
         </div>
         <NavBtn>
-            <button>Log in</button>
-            <button>Register</button>
-          </NavBtn>
+          <button>Log in</button>
+          <button>Register</button>
+        </NavBtn>
       </nav>
-
     </>
   );
 };

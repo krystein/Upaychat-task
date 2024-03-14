@@ -8,7 +8,6 @@ import img7 from "../component/img/NGN.png";
 import img8 from "../component/img/security.png";
 import img9 from "../component/img/note.png";
 
-
 export const mockData = [
   {
     type: "Debit Card",
@@ -68,61 +67,81 @@ export const mockData = [
   },
 ];
 
-
 export const menuData = [
-  
-    { title: "Send & Recieve", link: "/#Home" },
-    { title: "Buy Airtime & data", link: "/#Services" },
-    { title: "Pay bills", link: "/#Portfolio" },
-    { title: "Card", link: "/#cards" },  
+  {
+    title: "Send & Recieve",
+    link: "/#Home",
+    option: ["Action", "Another Action", "something action"],
+  },
+  {
+    title: "Buy Airtime & data",
+    link: "/#Services",
+    option: ["Action", "Another Action", "something action"],
+  },
+  {
+    title: "Pay bills",
+    link: "/#Portfolio",
+    option: ["Action", "Another Action", "something action"],
+  },
+  {
+    title: "Card",
+    link: "/#cards",
+    option: ["Action", "Another Action", "something action"],
+  },
 ];
 
 export const valueData = [
   {
-    img:img4,
+    img: img4,
     title: "Free cash transfer",
-    description: "It's free to open a UpayChat account, send or request money from anyone using UpayChat account balance."
+    description:
+      "It's free to open a UpayChat account, send or request money from anyone using UpayChat account balance.",
   },
   {
-    img:img3,
+    img: img3,
     title: "Bill payment",
-    description: "Paying your bills is always fast and easy with Upaychat."
+    description: "Paying your bills is always fast and easy with Upaychat.",
   },
   {
     img: img7,
     title: "No monthly fee",
-    description: "Upaychat has no monthly fee,no maintenance fee and no hidden fees or charges."
+    description:
+      "Upaychat has no monthly fee,no maintenance fee and no hidden fees or charges.",
   },
   {
-    img:img6,
+    img: img6,
     title: "Free cash transfer",
-    description: "UpayChat enables you to choose who can see your payment you can set payment preference to friends, public, or private"
+    description:
+      "UpayChat enables you to choose who can see your payment you can set payment preference to friends, public, or private",
   },
   {
-    img:img1,
+    img: img1,
     title: "Free cash transfer",
-    description: "Add money to your UpayChat account balance with your debit card, credit card or your existing bank account."
+    description:
+      "Add money to your UpayChat account balance with your debit card, credit card or your existing bank account.",
   },
   {
-    img:img5,
+    img: img5,
     title: "Free cash transfer",
-    description: "Click on setting & help in our mobile app to chat directly with our Customer Care at any time."
+    description:
+      "Click on setting & help in our mobile app to chat directly with our Customer Care at any time.",
   },
   {
-    img:img9,
+    img: img9,
     title: "Free cash transfer",
-    description: "Upaychat included a note section in the payment page which provides details about the transaction to avoid confusion."
+    description:
+      "Upaychat included a note section in the payment page which provides details about the transaction to avoid confusion.",
   },
   {
-    img:img2,
+    img: img2,
     title: "Free cash transfer",
-    description: "You can receive money into your Upaychat or transfer your balance to your existing bank account"
+    description:
+      "You can receive money into your Upaychat or transfer your balance to your existing bank account",
   },
   {
-    img:img8,
+    img: img8,
     title: "Free cash transfer",
-    description: "With UpayChat your payment information is always encrypted before Sending to our servers. Our goal is to protect your online safety, the confidentiallity of our customer account and personal data"
+    description:
+      "With UpayChat your payment information is always encrypted before Sending to our servers. Our goal is to protect your online safety, the confidentiallity of our customer account and personal data",
   },
-  
-  
-]
+];

@@ -41,8 +41,8 @@ const footer = () => {
         </ul>
       </div>
       <div className="col-md">
-        <div className="d-flex" style={{ fontSize: 50, gap: 20 }}>
-          <ul className="d-flex">
+        <div className="d-flex" style={{ fontSize: 50, gap: 20}}>
+          <ul className="d-flex" style={{listStyle:"none"}}>
             <li>
               <FaTwitter />
             </li>

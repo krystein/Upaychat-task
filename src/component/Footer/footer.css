@@ -1,6 +1,6 @@
 ul> h4{
     color: #4ee54a;
 }
-li{
+.col-md>ul >li{
     list-style: none;
 }
